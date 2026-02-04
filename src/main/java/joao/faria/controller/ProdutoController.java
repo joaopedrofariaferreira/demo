@@ -13,8 +13,7 @@ import joao.faria.demo.model.Produto;
 public class ProdutoController {
 
     @PostMapping
-    public void salvarProduto( Produto produto){
-        System.out.println("produto Recebido: " + produto);
+    public void salvarProduto(@RequestBody Produto produto) {
+        System.out.println("Produto recebido: " + produto);
     }
-    
 }
